@@ -1,9 +1,17 @@
 import './Box.css';
+import {useState } from 'react';
 
 //const BoxRows = (probs) => {
 const BoxRows = ({ mvList }) => {
     //const mvList = [...probs.mvList];
-    console.log("boxrows", mvList);
+    // console.log("boxrows", mvList);
+
+    const [footTag, setFootTag] = useState(' ');
+
+    const showMv = (row) => {
+        console.log(row);
+        setFootTag(row.cd)
+    }
 
 
     let trTags = [];
@@ -12,30 +20,34 @@ const BoxRows = ({ mvList }) => {
 
         let icon;
         let intent = parseInt(row.rankInten);
-        if (intent == 0) icon = '⏺';
-        else if(intent < 0) icon = '🔽';
-        else if(intent > 0) icon = '🔼';
+        if (intent === 0) icon = '⏺';
+        else if (intent < 0) icon = '🔽';
+        else if (intent > 0) icon = '🔼';
 
 
 
-            trTags.push(
-                <tr className="mytr" key={row.movieCd}>
-                    <td>{row.rank}</td>
-                    <td>{row.movieNm}</td>
-                    <td>{parseInt(row.salesAmt).toLocaleString()}</td>
-                    <td>{icon}</td>
-                </tr>
-            );
+        trTags.push(
+            <tr className="mytr" key={row.movieCd} onClick={() => showMv(row)}>
+                <td>{row.rank}</td>
+                <td>{row.movieNm}</td>
+                <td>{parseInt(row.salesAmt).toLocaleString()}</td>
+                <td>{icon}</td>
+            </tr>
+        );
 
 
     }
 
-    console.log(trTags);
-
-
     return (
         <>
-            {trTags}
+            <tbody>
+                {trTags}
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colSpan={4}>{footTag}</td>
+                </tr>
+            </tfoot>
         </>
     )
 }
