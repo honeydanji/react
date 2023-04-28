@@ -6,12 +6,14 @@ const BoxRows = ({ mvList }) => {
     //const mvList = [...probs.mvList];
     // console.log("boxrows", mvList);
 
-    const [footTag, setFootTag] = useState(' ');
+    const [footTag, setFootTag] = useState("합계");
 
+    // 클릭된 자료 확인
     const showMv = (row) => {
-        console.log(row);
-        setFootTag(row.cd)
+        //console.log(row.rank, row.movieNm);
+        setFootTag(concat("["+row.movieCd+"]" + " " + row.movieNm + " 개봉일 : " + row.openDt));
     }
+
 
 
     let trTags = [];
@@ -23,7 +25,6 @@ const BoxRows = ({ mvList }) => {
         if (intent === 0) icon = '⏺';
         else if (intent < 0) icon = '🔽';
         else if (intent > 0) icon = '🔼';
-
 
 
         trTags.push(
@@ -44,8 +45,8 @@ const BoxRows = ({ mvList }) => {
                 {trTags}
             </tbody>
             <tfoot>
-                <tr>
-                <td colSpan={4}>{footTag}</td>
+                <tr className="ft1">
+                <td colSpan={4} className="ft">{footTag}</td>
                 </tr>
             </tfoot>
         </>

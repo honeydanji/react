@@ -1,0 +1,22 @@
+.dt {
+    display: inline-flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+
+.c2 {
+    color: rgb(35, 86, 227);
+}
+
+.c21 {
+    color: rgb(255, 0, 0);
+}
+
+.c22 {
+    color: rgb(107, 218, 77);
+}

@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'ARCHISCULPTURE_v200';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2303@1.0/ARCHISCULPTURE_v200.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font : inherit; 
+}
+
+.App {
+  font-family: 'ARCHISCULPTURE_v200';
+}
