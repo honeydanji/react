@@ -5,8 +5,8 @@ import './App.css';
 //import Box from './03/Box';
 //import MyDiv from './04/MyDiv';
 //import style from './MyDiv.module.css';
-import Frcst from './05/Frcst';
-
+//import Frcst from './05/Frcst';
+import Taccident from './06/Taccident';
 function App() {
   return (
     //<Hello />
@@ -15,7 +15,8 @@ function App() {
     // </div>
     // //<Myclock/>
     //<MyDiv/>
-    <Frcst/> 
+    //<Frcst/>
+    <Taccident/> 
   );
 }
 
