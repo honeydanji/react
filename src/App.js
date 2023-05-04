@@ -6,7 +6,9 @@ import './App.css';
 //import MyDiv from './04/MyDiv';
 //import style from './MyDiv.module.css';
 //import Frcst from './05/Frcst';
-import Taccident from './06/Taccident';
+//import Taccident from './06/Taccident';
+import MyRef from './07/MyRef';
+
 function App() {
   return (
     //<Hello />
@@ -16,7 +18,8 @@ function App() {
     // //<Myclock/>
     //<MyDiv/>
     //<Frcst/>
-    <Taccident/> 
+    //<Taccident/>
+    <MyRef/> 
   );
 }
 
