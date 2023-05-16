@@ -223,6 +223,7 @@ const Box = () => {
                     <BoxRows mvList={mvlist} />
                 </table>
             </article>
+            
         </main>
     )
 }
