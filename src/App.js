@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+//import Box from './03/Box2';
 //import Hello from './01/Hello';
 //import Myclock from './02/MyClock';
 //import Box from './03/Box';
@@ -7,19 +8,21 @@ import './App.css';
 //import style from './MyDiv.module.css';
 //import Frcst from './05/Frcst';
 //import Taccident from './06/Taccident';
-import MyRef from './07/MyRef';
+//import MyRef from './07/MyRef';
+import Gallery from './08/Gallery';
 
 function App() {
   return (
     //<Hello />
     // <div className="APP">
-    // <Box/>
+    //<Box2/>
     // </div>
     // //<Myclock/>
     //<MyDiv/>
     //<Frcst/>
     //<Taccident/>
-    <MyRef/> 
+   // <MyRef/> 
+   <Gallery/>
   );
 }
 
