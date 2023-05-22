@@ -3,10 +3,9 @@ import {useState, useEffect, useRef} from 'react' ;
 import xy from './getxy.json' ;
 
 const FcstMain = () => {
-    const ops = xy.map((item) =>
-        <option value={item["행정구역코드"]} key={item["행정구역코드"]} >
-            {item["1단계"]}
-        </option>
+    const ops = xy.map((item) => 
+        //console.log(item);
+    <option value={item["행정구역코드"]} key={item["행정구역코드"]}>{item["1단계"]}</option>
     ) ;
     console.log(xy)
 
@@ -53,7 +52,7 @@ const FcstMain = () => {
     }
 
     return(
-        <article>
+        <article>ㄴ
             <header><h1>단기예보 정보 선택</h1></header>
             <div className='grid'>
                 <div>
