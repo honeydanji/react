@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "gallery-5f1f0"
-  }
+    "default": "boxx-b0cba",
+    "npm run buildd": "boxx-b0cba"
+  },
+  "targets": {},
+  "etags": {}
 }
