@@ -10,7 +10,10 @@ import './App.css';
 //import Taccident from './06/Taccident';
 //import MyRef from './07/MyRef';
 //import Gallery from './08/Gallery';
-import Fcst from './10/Fcst';
+//import Fcst from './10/Fcst';
+//import Fcst from './101/Fcst';
+import Cnt from './111/Cnt';
+import { RecoilRoot } from "recoil";
 
 function App() {
   return (
@@ -24,7 +27,10 @@ function App() {
     //<Taccident/>
    // <MyRef/> 
    //<Gallery/>
-   <Fcst/>
+   //<Fcst/>
+   <RecoilRoot>
+   <Cnt/>
+   </RecoilRoot>
   );
 }
 
